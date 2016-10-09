@@ -88,6 +88,9 @@
 
         <h2>Choisissez les ressources liées à inclure dans une requête API</h2>
         <p>
+            Attention : Cette fonctionnalité ne concerne pas les relations entre les collections de données. En effet elles ne sont pas encore implémentées.
+        </p>
+        <p>
             Incluez dans les réponses de l’API les ressources ayant une relation avec le type de ressource requêté grâce au paramètre "include". <br />
             Référez-vous à la documentation pour plus de détails.
         </p>
@@ -96,14 +99,30 @@
         <p>
             Accédez plus facilement aux ressources grâce aux nouvelles routes simplifiées :
         </p>
-        <div class="ui bulleted list">
-            <div class="item">/api/v1/collections</div>
-            <div class="item">/api/v1/collections/<em>ID_COLLECTION</em></div>
-            <div class="item">/api/v1/collections/<em>ID_COLLECTION</em>/relationships/champs</div>
-            <div class="item">/api/v1/collections/<em>ID_COLLECTION</em>/relationships/donnees</div>
-            <div class="item">/api/v1/champs</div>
-            <div class="item">/api/v1/champs/<em>ID_CHAMP</em></div>
-        </div>
+        <pre>OLD: /api/v1/services/ID_SERVICE/relationships/collections
+NEW: /api/v1/collections
+</pre>
+        <p>
+            Info : Cette route permet d'obtenir la liste de toutes les collections publiques de la Plate-forme (ainsi que les collections privées rattachées au service réalisant la requête), et non plus seulement celles associées à un service en particulier.
+        </p>
+        <pre>OLD: /api/v1/services/ID_SERVICE/relationships/collections/ID_COLLECTION
+NEW: /api/v1/collections/ID_COLLECTION
+</pre>
+        <pre>OLD: /api/v1/services/ID_SERVICE/relationships/collections/ID_COLLECTION/relationships/champs
+NEW: /api/v1/collections/ID_COLLECTION/relationships/champs
+</pre>
+        <pre>OLD: /api/v1/services/ID_SERVICE/relationships/collections/ID_COLLECTION/relationships/donnees
+NEW: /api/v1/collections/ID_COLLECTION/relationships/donnees
+</pre>
+        <pre>OLD: /api/v1/services/ID_SERVICE/relationships/collections/ID_COLLECTION/relationships/champs
+NEW: /api/v1/champs
+</pre>
+        <p>
+            Info : Cette route permet d'obtenir la liste de tous les champs rattachés au service réalisant la requête.
+        </p>
+        <pre>OLD: /api/v1/services/ID_SERVICE/relationships/collections/ID_COLLECTION/relationships/champs/ID_CHAMP
+NEW: /api/v1/champs/ID_CHAMP
+</pre>
 
         <h2>Tableau de bord utilisateur</h2>
         <p>
