@@ -1,0 +1,10 @@
+Options +FollowSymlinks -Indexes
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^www\.
+RewriteRule ^(.*)$ http://baasile.io/$1 [R=301,L]
+
+RewriteBase /
+RewriteRule ^changelog/(.*)/$ changelog/index.php?i=$1 [QSA,L]
+RewriteRule ^changelog/(.*)\.html$ changelog/index.php?i=$1 [QSA,L]
+RewriteRule ^changelog/(.*)$ changelog/index.php?i=$1 [QSA,L]
