@@ -6,16 +6,20 @@ $i = $_GET["i"];
 
 $md = false;
 
-$md_filepath = __DIR__.'/../../lib/public/changelogs/'.$i.'.md';
-if (file_exists($md_filepath)) {
-  $date = $i;
-  $changelog_title = "CHANGELOG / ".$date;
-  $text = file_get_contents($md_filepath);
-  $Parsedown = new Parsedown();
-  $md = $Parsedown-> text($text);
+if ($i === "") {
+  $changelog_title = "Actualités";
 } else {
-  $changelog_title = "Cette page n'existe pas!";
-  http_response_code(404);
+  $md_filepath = __DIR__.'/../../lib/public/changelogs/'.$i.'.md';
+  if (file_exists($md_filepath)) {
+    $date = $i;
+    $changelog_title = "CHANGELOG / ".$date;
+    $text = file_get_contents($md_filepath);
+    $Parsedown = new Parsedown();
+    $md = $Parsedown->text($text);
+  } else {
+    $changelog_title = "Cette page n'existe pas!";
+    http_response_code(404);
+  }
 }
 
 ?><!DOCTYPE html>
@@ -44,13 +48,46 @@ if (file_exists($md_filepath)) {
   </style>
 </head>
 <body>
-<div class="ui vertical inverted center aligned segment">
+<div class="ui vertical inverted center aligned segment b-io-space-background">
   <div class="ui container">
     <div class="ui massive inverted secondary pointing menu">
       <a href="/" class="item"><img src="/assets/img/baasile-io-inverted-simple-x30.png"></a>
     </div>
   </div>
 </div>
+<?php if ($i === "") { ?>
+  <div class="ui vertical stripe segment">
+    <div class="ui text container">
+      <div class="ui aligned stackable grid">
+        <div class="row">
+          <div class="six wide column">
+            <div class="ui segment center aligned b-io-space-background">
+              <img src="/assets/img/basilio-homepage.png">
+            </div>
+          </div>
+          <div class="ten wide column">
+            <h1>Actualités</h1>
+            <div class="ui list">
+              <div class="item">
+                <div>Novembre 2016</div>
+                <div class="list">
+                  <a class="item" href="/changelog/2016-11-23.html">CHANGELOG / 2016-11-23</a>
+                </div>
+              </div>
+              <div class="item">
+                <div>Octobre 2016</div>
+                <div class="list">
+                  <a class="item" href="/changelog/2016-10-13.html">CHANGELOG / 2016-10-13</a>
+                  <a class="item" href="/changelog/2016-10-06.html">CHANGELOG / 2016-10-06</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<?php } else { ?>
 <div class="ui text container">
   <div class="ui stripe vertical segment">
     <?php if ($md === false) { ?>
@@ -61,28 +98,20 @@ if (file_exists($md_filepath)) {
       </h1>
 
     <?php } else { ?>
-      <h1 class="ui block header">
-        <img src="/assets/img/baasile-io-200x200.png">
+      <a href="/changelog">Retourner aux actualités</a>
+      <h1 class="ui block header b-io-space-background">
+        <img src="/assets/img/basilio-avatar-small.png">
         <div class="content">
-          Nouveautés
-          <div class="sub header">CHANGELOG / <?php echo $date; ?></div>
+          Actualités
+          <div class="sub header b-io-special">CHANGELOG / <?php echo $date; ?></div>
         </div>
       </h1>
       <?php echo $md; ?>
     <?php } ?>
   </div>
 </div>
-<div class="ui inverted vertical footer segment">
-  <div class="ui container">
-    <div class="ui stackable inverted divided equal height stackable grid">
-      <div class="three wide column">
-      </div>
-      <div class="three wide column">
-      </div>
-      <div class="seven wide column">
-      </div>
-    </div>
-  </div>
-</div>
+<?php } ?>
+
+<?php include '../includes/footer.php'; ?>
 </body>
 </html>

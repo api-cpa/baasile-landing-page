@@ -21,15 +21,16 @@ pre {
 }
 
 .masthead-homepage > .ui.text.container img {
-    margin-top: 20px;
 }
 
 @media screen and (min-width: 500px) {
+    /*
     .masthead-homepage > .ui.text.container img {
         margin-top: 20px;
         padding-left: 90px;
         padding-right: 90px;
     }
+    */
 }
 
 .hidden.menu {
@@ -91,4 +92,146 @@ pre {
 
 .secondary.pointing.menu .toc.item {
     display: none;
+}
+
+
+.masthead-homepage > .ui.container {
+    position: relative !important;
+    display: block !important;
+}
+
+@media (max-width: 650px) {
+    .masthead-homepage > .ui.container img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .b-io-masthead-persona {
+        display: none;
+    }
+}
+
+.b-io-masthead-persona {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+body.b-io-homepage {
+    background-color: #000 !important;
+    background-image: url('../img/space-background.jpg') !important;
+
+    -webkit-animation: backgroundScroll 300s linear infinite;
+    animation: backgroundScroll 300s linear infinite;
+    color: #FFFFFF;
+
+    text-shadow: 2px 2px 10px #000000 !important;
+}
+
+
+.b-io-special {
+    color: #FF9E00 !important;
+}
+
+.b-io-space-background {
+    background-color: #000 !important;
+    background-image: url('../img/space-background.jpg') !important;
+
+    -webkit-animation: backgroundScroll 300s linear infinite;
+    animation: backgroundScroll 300s linear infinite;
+    color: #FFF !important;
+}
+
+body.b-io-homepage .b-io-space-background {
+    background: transparent !important;
+}
+
+@-webkit-keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: -2760px -0px;}
+}
+
+@keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: -2760px -0px;}
+}
+
+.b-io-space-background > .segment {
+    padding-top: 1em !important;
+}
+.b-io-space-background > .segment > .grid > .row {
+    border-top: 20px dotted rgba(255, 255, 255, .1) !important;
+}
+.b-io-space-background > .segment > .grid > .row:first-child {
+    border-top: 0 !important;
+}
+
+.b-io-schema-big-title {
+    position: relative;
+    display: block;
+    padding-top: 40px;
+}
+.b-io-schema-big-title h1 {
+    font-size: 3em;
+    color: #FF9E00;
+    text-align: center !important;
+}
+
+.b-io-schema-container {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding: 25px 0 45px 0;
+}
+
+
+.b-io-schema-image {
+    position: relative;
+    display: block;
+    max-width: 600px;
+    margin: 0 auto 0 auto;
+}
+.b-io-schema-image img {
+    width: 100%;
+}
+
+.b-io-schema-title {
+    position: relative;
+    color: #FF9E00;
+    font-size: 2.4em;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 10px #000000 !important;
+    margin-top: -40px;
+}
+
+@media screen and (max-width: 500px) {
+    .b-io-schema-title {
+        margin-top: 0px;
+    }
+}
+
+
+.b-io-schema-description {
+    color: #26A9B3;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    text-shadow: 2px 2px 10px #000000 !important;
+}
+
+
+.b-io-social-container {
+    text-align: center;
+    padding: 40px 0 40px 0;
+    vertical-align: middle;
+}
+
+.b-io-social-container.b-io-fb {
+    padding: 36px 0 44px 0;
 }
