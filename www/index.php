@@ -26,6 +26,21 @@
         <h2>Créez votre propre <span class="b-io-special">galaxie de services</span></h2>
     </div>
 </div>
+<div class="ui text container">
+    <div class="ui vertical stripe center aligned segment">
+        <p>
+            <a href="mailto:contact@baasile.io" class="ui huge inverted left icon button">
+                <i class="left mail icon"></i>
+                Nous contacter
+            </a>
+            <a href="https://github.com/baasile-io/baasile-io" class="ui huge inverted left icon button">
+                <i class="left github icon"></i>
+                Déployer maintenant !
+            </a>
+        </p>
+        <p><strong>Baas<span class="b-io-special">ile</span> IO</strong> est une solution BaaS pour administrer des échanges de données entre de multiples services web.</p>
+    </div>
+</div>
 <div class="ui container">
     <div class="ui vertical stripe segment">
         <div class="ui equal width stackable internally celled grid">
@@ -36,7 +51,7 @@
                 </div>
                 <div class="column">
                     <h3 class="b-io-special">Simplicité</h3>
-                    <p>La plate-forme intègre un tableau de bord ergonomique.</p>
+                    <p>Bénéficiez d'un tableau de bord ergonomique.</p>
                 </div>
                 <div class="column">
                     <h3 class="b-io-special">Rapidité</h3>
@@ -46,7 +61,6 @@
         </div>
     </div>
 </div>
-
 <div class="b-io-space-background">
     <div class="ui vertical stripe segment">
         <div class="ui middle aligned stackable grid">

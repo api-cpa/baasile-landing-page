@@ -15,8 +15,8 @@
         </div>
       </div>
       <div class="eight wide column">
-        <h4 class="ui inverted header">BaaS<span class="b-io-special">ile</span> IO</h4>
-        <p>Baasile IO est une solution BaaS pour créer et administrer des échanges de données entre des services web.</p>
+        <h4 class="ui inverted header">Baas<span class="b-io-special">ile</span> IO</h4>
+        <p>Baasile IO est une marque déposée en France.</p>
       </div>
     </div>
   </div>

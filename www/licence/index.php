@@ -31,7 +31,7 @@
         </div>
         <div class="ten wide column">
           <h1>Licence</h1>
-          Baasile IO est distribué sous licence libre <a href="https://raw.githubusercontent.com/baasile-io/baasile-io/master/LICENSE" target="_blank">Apache 2.0</a>
+          Baasile IO&reg; est distribué sous licence libre <a href="https://raw.githubusercontent.com/baasile-io/baasile-io/master/LICENSE" target="_blank">Apache 2.0</a>
         </div>
       </div>
     </div>

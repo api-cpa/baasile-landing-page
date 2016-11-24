@@ -55,7 +55,7 @@ pre {
 }
 .masthead h2 {
     font-size: 1.7em;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .ui.vertical.stripe {
@@ -122,8 +122,8 @@ body.b-io-homepage {
     background-color: #000 !important;
     background-image: url('../img/space-background.jpg') !important;
 
-    -webkit-animation: backgroundScroll 300s linear infinite;
-    animation: backgroundScroll 300s linear infinite;
+    -webkit-animation: backgroundScroll 150s linear infinite;
+    animation: backgroundScroll 150s linear infinite;
     color: #FFFFFF;
 
     text-shadow: 2px 2px 10px #000000 !important;
@@ -133,13 +133,16 @@ body.b-io-homepage {
 .b-io-special {
     color: #FF9E00 !important;
 }
+.b-io-special-inverted {
+    color: #FFFFFF !important;
+}
 
 .b-io-space-background {
     background-color: #000 !important;
     background-image: url('../img/space-background.jpg') !important;
 
-    -webkit-animation: backgroundScroll 300s linear infinite;
-    animation: backgroundScroll 300s linear infinite;
+    -webkit-animation: backgroundScroll 150s linear infinite;
+    animation: backgroundScroll 150s linear infinite;
     color: #FFF !important;
 }
 
@@ -149,12 +152,12 @@ body.b-io-homepage .b-io-space-background {
 
 @-webkit-keyframes backgroundScroll {
     from {background-position: 0 0;}
-    to {background-position: -2760px -0px;}
+    to {background-position: -1380px -0px;}
 }
 
 @keyframes backgroundScroll {
     from {background-position: 0 0;}
-    to {background-position: -2760px -0px;}
+    to {background-position: -1380px -0px;}
 }
 
 .b-io-space-background > .segment {
@@ -165,6 +168,22 @@ body.b-io-homepage .b-io-space-background {
 }
 .b-io-space-background > .segment > .grid > .row:first-child {
     border-top: 0 !important;
+}
+
+@media (max-width: 768px) {
+
+    .masthead-homepage .b-io-special {
+        display: block;
+    }
+
+    .ui.stripe.segment {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .ui.stripe.segment p {
+        max-width: 280px;
+        margin: 0 auto 0 auto;
+    }
 }
 
 .b-io-schema-big-title {
@@ -214,8 +233,9 @@ body.b-io-homepage .b-io-space-background {
 
 
 .b-io-schema-description {
-    color: #26A9B3;
-    font-weight: bold;
+    //color: #26A9B3;
+    color: #FFFFFF;
+    //font-weight: bold;
     text-align: center;
     font-size: 1.5em;
     max-width: 400px;
@@ -234,4 +254,8 @@ body.b-io-homepage .b-io-space-background {
 
 .b-io-social-container.b-io-fb {
     padding: 36px 0 44px 0;
+}
+
+#progress_bar .bar {
+    width: 35%;
 }
