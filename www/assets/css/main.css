@@ -248,12 +248,8 @@ body.b-io-homepage .b-io-space-background {
 
 .b-io-social-container {
     text-align: center;
-    padding: 40px 0 40px 0;
+    padding: 0 0 20px 0;
     vertical-align: middle;
-}
-
-.b-io-social-container.b-io-fb {
-    padding: 36px 0 44px 0;
 }
 
 #progress_bar .bar {

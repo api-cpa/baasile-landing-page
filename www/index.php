@@ -143,23 +143,23 @@
     </div>
 </div>
 <div class="ui text container">
-    <div class="ui three column grid">
+    <div class="ui three column stackable grid">
         <div class="column">
             <div class="b-io-social-container b-io-fb">
                 <!-- facebook -->
-                <div class="fb-like" data-href="https://www.facebook.com/BaasileIO/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+                <div class="fb-like" data-href="https://www.facebook.com/BaasileIO/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>
             </div>
         </div>
         <div class="column">
             <div class="b-io-social-container">
                 <!-- twitter -->
-                <a href="https://twitter.com/BaasileIO" class="twitter-follow-button" data-show-count="false" data-lang="fr">Suivre @BaasileIO</a>
+                <a href="https://twitter.com/BaasileIO" class="twitter-follow-button" data-show-count="false" data-lang="fr" data-size="large">Suivre @BaasileIO</a>
             </div>
         </div>
         <div class="column">
             <div class="b-io-social-container">
                 <!-- github -->
-                <a class="github-button" href="https://github.com/baasile-io/baasile-io" data-count-href="/baasile-io/baasile-io/stargazers" data-count-api="/repos/baasile-io/baasile-io#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star baasile-io/baasile-io on GitHub">Star</a>
+                <a class="github-button" data-style="mega" href="https://github.com/baasile-io/baasile-io" data-count-href="/baasile-io/baasile-io/stargazers" data-count-api="/repos/baasile-io/baasile-io#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star baasile-io/baasile-io on GitHub">Star</a>
             </div>
         </div>
     </div>
@@ -173,7 +173,6 @@
     js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.8&appId=242704516149951";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </body>
