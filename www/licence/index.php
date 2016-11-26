@@ -1,22 +1,16 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <title>Licence - Baasile IO</title>
-  <meta name="description" content="">
-  <meta name=viewport content="width=device-width, initial-scale=1">
-  <meta name="mobile-web-app-capable" content="yes">
+<?php
 
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700" rel="stylesheet">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css">
-  <link rel="stylesheet" href="/assets/css/main.css">
+  $page_title = "Baasile IO : Licence Apache 2.0";
+  $page_canonical = "http://baasile.io/licence";
+  $page_description = "Baasile IO est distribué sous la licence libre Apache 2.0.";
 
-</head>
+  include '../includes/header.php';
+?>
 <body>
 <div class="ui vertical inverted center aligned segment b-io-space-background">
   <div class="ui container">
     <div class="ui massive inverted secondary pointing menu">
-      <a href="/" class="item"><img src="/assets/img/baasile-io-inverted-simple-x30.png"></a>
+      <a href="/" class="item"><img src="/assets/img/baasile-io-inverted-simple-x30.png" alt="www.baasile.io"></a>
     </div>
   </div>
 </div>
@@ -26,7 +20,7 @@
       <div class="row">
         <div class="six wide column">
           <div class="ui segment center aligned b-io-space-background">
-            <img src="/assets/img/basilio-homepage.png">
+            <img src="/assets/img/basilio-homepage.png" alt="Avatar Baasile IO">
           </div>
         </div>
         <div class="ten wide column">

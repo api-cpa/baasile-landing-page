@@ -8,3 +8,7 @@ RewriteBase /
 RewriteRule ^changelog/(.*)/$ changelog/index.php?i=$1 [QSA,L]
 RewriteRule ^changelog/(.*)\.html$ changelog/index.php?i=$1 [QSA,L]
 RewriteRule ^changelog/(.*)$ changelog/index.php?i=$1 [QSA,L]
+
+RedirectPermanent /changelog/2016-10-06.html /changelog/2016-10-06
+RedirectPermanent /changelog/2016-10-13.html /changelog/2016-10-13
+RedirectPermanent /changelog/2016-11-23.html /changelog/2016-11-23

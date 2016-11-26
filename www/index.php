@@ -1,41 +1,29 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <title>Baasile IO</title>
-    <meta name="description" content="">
-    <meta name=viewport content="width=device-width, initial-scale=1">
-    <meta name="mobile-web-app-capable" content="yes">
-
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700" rel="stylesheet">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
-</head>
+<?php include 'includes/header.php'; ?>
 <body class="b-io-homepage">
 <div class="ui vertical inverted masthead masthead-homepage b-io-space-background center aligned segment">
     <div class="ui container">
         <div class="ui inverted massive secondary pointing menu">
-            <a href="/" class="item"><img src="/assets/img/baasile-io-inverted-simple-x30.png"></a>
+            <a href="/" class="item"><img src="/assets/img/baasile-io-inverted-simple-x30.png" alt="www.baasile.io"></a>
         </div>
     </div>
     <div class="ui container">
         <div class="b-io-masthead-persona">
             <img alt="Baasile IO" src="/assets/img/basilio-homepage.png">
         </div>
-        <img alt="Baasile IO" src="/assets/img/baasile-io-homepage.png">
+        <img alt="Mascotte de Baasile IO" src="/assets/img/baasile-io-homepage.png">
         <h2>Créez votre propre <span class="b-io-special">galaxie de services</span></h2>
     </div>
 </div>
 <div class="ui text container">
     <div class="ui vertical stripe center aligned segment">
         <p>
-            <a href="mailto:contact@baasile.io" class="ui huge inverted left icon button">
+            <a href="mailto:contact@baasile.io" title="Contacter l'équipe de Baasile IO" class="ui huge inverted left icon button">
                 <i class="left mail icon"></i>
-                Nous contacter
+                Contactez-nous
             </a>
-            <a href="https://github.com/baasile-io/baasile-io" class="ui huge inverted left icon button">
+            <a href="https://github.com/baasile-io/baasile-io" title="Téléchargez le code source de Baasile IO" class="ui huge inverted left icon button">
                 <i class="left github icon"></i>
-                Déployer maintenant !
+                Déployez maintenant !
             </a>
         </p>
         <p><strong>Baas<span class="b-io-special">ile</span> IO</strong> est une solution BaaS pour administrer des échanges de données entre de multiples services web.</p>
@@ -68,7 +56,7 @@
                 <div class="column">
                     <div class="b-io-schema-container">
                         <div class="b-io-schema-image">
-                            <img src="/assets/img/schemes/schema-flux.png">
+                            <img src="/assets/img/schemes/schema-flux.png" alt="Harmonisez, mesurez et contrôlez les échanges de données.">
                         </div>
                         <div class="b-io-schema-title">
                             Flux
@@ -83,7 +71,7 @@
                 <div class="column">
                     <div class="b-io-schema-container">
                         <div class="b-io-schema-image">
-                            <img src="/assets/img/schemes/schema-partage.png">
+                            <img src="/assets/img/schemes/schema-partage.png" alt="Stockez vos données et partagez-les avec d'autres services.">
                         </div>
                         <div class="b-io-schema-title">
                             Partage
@@ -98,7 +86,7 @@
                 <div class="column">
                     <div class="b-io-schema-container">
                         <div class="b-io-schema-image">
-                            <img src="/assets/img/schemes/schema-droits.png">
+                            <img src="/assets/img/schemes/schema-droits.png" alt="Personnalisez les droits d'accès aux flux et aux données.">
                         </div>
                         <div class="b-io-schema-title">
                             Gestion des droits
@@ -113,7 +101,7 @@
                 <div class="column">
                     <div class="b-io-schema-container">
                         <div class="b-io-schema-image">
-                            <img src="/assets/img/schemes/schema-fc.png">
+                            <img src="/assets/img/schemes/schema-fc.png" alt="Bénéficiez nativement du dispositif de l'État FranceConnect.">
                             <div class="b-io-schema-title">
                                 FranceConnect
                             </div>
@@ -128,7 +116,7 @@
                 <div class="column">
                     <div class="b-io-schema-container">
                         <div class="b-io-schema-image">
-                            <img src="/assets/img/schemes/schema-dashboard.png">
+                            <img src="/assets/img/schemes/schema-dashboard.png" alt="Supportez vos utilisateurs, administrez la plate-forme et mesurez son usage.">
                         </div>
                         <div class="b-io-schema-title">
                             Administration
@@ -175,5 +163,18 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "Baasile IO",
+  "url": "http://baasile.io",
+  "logo": "http://baasile.io/assets/img/baasile-io-logo-600x600.png",
+  "sameAs": [
+    "http://www.facebook.com/BaasileIO",
+    "http://twitter.com/BaasileIO"
+  ]
+}
+</script>
 </body>
 </html>
