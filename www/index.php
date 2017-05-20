@@ -1,5 +1,64 @@
-<?php include 'includes/header.php'; ?>
-<body class="b-io-homepage">
+<?php
+
+$page_id = 'homepage';
+
+include 'includes/header.php';
+?>
+<div id="stars"></div>
+<div id="stars2"></div>
+<div id="stars3"></div>
+<div class="site-wrapper">
+
+  <div class="site-wrapper-inner">
+
+    <div class="cover-container">
+
+      <div class="masthead clearfix">
+        <div class="inner">
+          <h3 class="masthead-brand">Baas<span class="b-io-special">ile</span> IO</h3>
+          <nav class="nav nav-masthead">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="/discover">Discover</a>
+            <a class="nav-link" href="/contact">About us</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="inner cover">
+        <h1 class="cover-heading">
+          <img alt="Baasile IO" src="/assets/img/baasile-io-logo-blackbg.png" class="img-fluid">
+        </h1>
+        <p class="lead b-io-subtitle">Augmented <span class="b-io-special">interconnection</span> platform</p>
+        <p class="lead">
+          <a href="/discover" class="btn btn-lg btn-primary">
+            <i class="fa fa-rocket fa-lg fa-fw fa-inverse"></i>
+            Discover our solution
+          </a>
+          <a href="/contact" class="btn btn-lg btn-secondary">
+            <i class="fa fa-users fa-lg fa-fw"></i>
+            About us
+          </a>
+        </p>
+      </div>
+
+      <div class="mastfoot">
+        <div class="inner">
+          <p>
+            Port Parallèle / Baasile IO<br />
+            <i class="fa fa-map-marker fa-fw fa-inverse" aria-hidden="true"></i> 70, rue Amelot, 75011 Paris<br />
+            <i class="fa fa-phone fa-fw fa-inverse" aria-hidden="true"></i> +33 6 51 15 98 82
+            <i class="fa fa-envelope fa-fw fa-inverse" aria-hidden="true"></i> contact@baasile.io
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+</body>
+<?php /*<body class="b-io-homepage">
 <div class="ui vertical inverted masthead masthead-homepage b-io-space-background center aligned segment">
     <div class="ui container">
         <div class="ui inverted massive secondary pointing menu">
@@ -8,10 +67,10 @@
     </div>
     <div class="ui container">
         <div class="b-io-masthead-persona">
-            <img alt="Baasile IO" src="/assets/img/basilio-homepage.png">
+            <img alt="Baasile IO - Backend as a Service" src="/assets/img/basilio-homepage.png">
         </div>
         <img alt="Mascotte de Baasile IO" src="/assets/img/baasile-io-homepage.png">
-        <h2>Créez votre propre <span class="b-io-special">galaxie de services</span></h2>
+        <h2>La plateforme <span class="b-io-special">d'interconnexion</span> augmentée</h2>
     </div>
 </div>
 <div class="ui text container">
@@ -21,14 +80,19 @@
                 <i class="left mail icon"></i>
                 Contactez-nous
             </a>
-            <a href="https://github.com/baasile-io/baasile-io" title="Téléchargez le code source de Baasile IO" class="ui huge inverted left icon button">
+            <!--<a href="https://github.com/baasile-io/baasile-io" title="Téléchargez le code source de Baasile IO" class="ui huge inverted left icon button">
                 <i class="left github icon"></i>
                 Déployez maintenant !
-            </a>
+            </a>-->
         </p>
-        <p><strong>Baas<span class="b-io-special">ile</span> IO</strong> est une solution BaaS pour administrer des échanges de données entre de multiples services web.</p>
+        <p>
+            <strong>Baas<span class="b-io-special">ile</span> IO</strong> simplifie les échanges de données
+            entre les <strong>services</strong> et les <strong>fournisseurs de données</strong>.
+            C'est une plateforme accessible en mode SaaS jouant le rôle d'un hub.
+        </p>
     </div>
 </div>
+<!--
 <div class="ui container">
     <div class="ui vertical stripe segment">
         <div class="ui equal width stackable internally celled grid">
@@ -49,6 +113,7 @@
         </div>
     </div>
 </div>
+-->
 <div class="b-io-space-background">
     <div class="ui vertical stripe segment">
         <div class="ui middle aligned stackable grid">
@@ -59,7 +124,7 @@
                             <img src="/assets/img/schemes/schema-flux.png" alt="Harmonisez, mesurez et contrôlez les échanges de données.">
                         </div>
                         <div class="b-io-schema-title">
-                            Flux
+                            Connectez
                         </div>
                         <div class="b-io-schema-description">
                             Harmonisez, mesurez et contrôlez les échanges de données.
@@ -71,13 +136,13 @@
                 <div class="column">
                     <div class="b-io-schema-container">
                         <div class="b-io-schema-image">
-                            <img src="/assets/img/schemes/schema-partage.png" alt="Stockez vos données et partagez-les avec d'autres services.">
+                            <img src="/assets/img/schemes/schema-partage.png" alt="Connectez votre service une seule fois et accédez à de multiples fournisseurs.">
                         </div>
                         <div class="b-io-schema-title">
-                            Partage
+                            Simplifiez
                         </div>
                         <div class="b-io-schema-description">
-                            Stockez vos données et partagez-les avec d'autres services.
+                            Connectez votre service une seule fois et accédez à de multiples fournisseurs.
                         </div>
                     </div>
                 </div>
@@ -86,17 +151,18 @@
                 <div class="column">
                     <div class="b-io-schema-container">
                         <div class="b-io-schema-image">
-                            <img src="/assets/img/schemes/schema-droits.png" alt="Personnalisez les droits d'accès aux flux et aux données.">
+                            <img src="/assets/img/schemes/schema-droits.png" alt="Paramétrez les droits d'accès entre les services et les fournisseurs de données.">
                         </div>
                         <div class="b-io-schema-title">
-                            Gestion des droits
+                            Contrôlez
                         </div>
                         <div class="b-io-schema-description">
-                            Personnalisez les droits d'accès aux flux et aux données.
+                            Paramétrez les droits d'accès entre les fournisseurs de données et les services.
                         </div>
                     </div>
                 </div>
             </div>
+            <!--
             <div class="row">
                 <div class="column">
                     <div class="b-io-schema-container">
@@ -112,6 +178,7 @@
                     </div>
                 </div>
             </div>
+            -->
             <div class="row">
                 <div class="column">
                     <div class="b-io-schema-container">
@@ -119,7 +186,7 @@
                             <img src="/assets/img/schemes/schema-dashboard.png" alt="Supportez vos utilisateurs, administrez la plate-forme et mesurez son usage.">
                         </div>
                         <div class="b-io-schema-title">
-                            Administration
+                            Administrez
                         </div>
                         <div class="b-io-schema-description">
                             Supportez vos utilisateurs, administrez la plate-forme et mesurez son usage.
@@ -131,28 +198,26 @@
     </div>
 </div>
 <div class="ui text container">
-    <div class="ui three column stackable grid">
+    <div class="ui two column stackable grid">
         <div class="column">
             <div class="b-io-social-container b-io-fb">
-                <!-- facebook -->
                 <div class="fb-like" data-href="https://www.facebook.com/BaasileIO/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>
             </div>
         </div>
         <div class="column">
             <div class="b-io-social-container">
-                <!-- twitter -->
                 <a href="https://twitter.com/BaasileIO" class="twitter-follow-button" data-show-count="false" data-lang="fr" data-size="large">Suivre @BaasileIO</a>
             </div>
         </div>
+        <!--
         <div class="column">
             <div class="b-io-social-container">
-                <!-- github -->
                 <a class="github-button" data-style="mega" href="https://github.com/baasile-io/baasile-io" data-count-href="/baasile-io/baasile-io/stargazers" data-count-api="/repos/baasile-io/baasile-io#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star baasile-io/baasile-io on GitHub">Star</a>
             </div>
         </div>
+        -->
     </div>
-</div>
-<?php include 'includes/footer.php'; ?>
+</div>*/ ?>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -160,7 +225,7 @@
     js = d.createElement(s); js.id = id;
     js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.8&appId=242704516149951";
     fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+  }(document, 'script', 'facebook-jssdk'));</script>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 <script type="application/ld+json">
