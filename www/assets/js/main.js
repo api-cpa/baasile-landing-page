@@ -36,7 +36,9 @@ window.addEventListener('mousemove', function(e){
   star3.style.marginLeft = '-' + pageX/5 + 'px';
 });
 
+
 /*
+
 function addClass(element, className) {
   if (element.classList) {
     element.classList.add(className);
@@ -82,3 +84,36 @@ window.addEventListener('scroll', update_navbar);
 update_navbar();
 
 */
+
+var current_y = 0;
+var y = 0;
+var interval;
+var is_animated = false;
+star1.style.transition = 'all .1s ease-out';
+var light_speed_effect = function() {
+  if (current_y == y) {
+    star1.style.marginTop = '0px';
+    star1.style.paddingBottom = '0px';
+    is_animated = false;
+    window.clearInterval(interval);
+    interval = null;
+  } else {
+    if(is_animated == false) {
+      is_animated = true;
+      value = Math.abs(current_y - y) / 20;
+      star1.style.marginTop = '-' + (value / 2) + 'px';
+      star1.style.paddingBottom = value + 'px';
+      window.setTimeout("current_y = " + y + "; is_animated = false;", 100);
+    }
+  }
+};
+var update_y = function() {
+  var doc = document.documentElement;
+  y = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
+  if (current_y != y && interval == null) {
+    interval = window.setInterval(light_speed_effect, 50);
+  }
+};
+
+window.addEventListener('scroll', update_y);
+update_y();

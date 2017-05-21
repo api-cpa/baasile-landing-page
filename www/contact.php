@@ -30,7 +30,7 @@ include 'includes/header.php';
         <div class="row">
           <div class="col-5">
             <div class="team-photo">
-              <img src="/assets/img/contact/logo-port-parallele.png" class="img-fluid pop">
+              <img src="/assets/img/contact/logo-port-parallele-small.png" class="img-fluid pop">
             </div>
           </div>
           <div class="col-7">
@@ -45,7 +45,7 @@ include 'includes/header.php';
         <div class="row">
           <div class="col-5">
             <div class="team-photo">
-              <img src="/assets/img/contact/jgigault.png" class="img-fluid pop">
+              <img src="/assets/img/contact/jgigault-small.png" class="img-fluid pop">
             </div>
           </div>
           <div class="col-7">
@@ -59,7 +59,7 @@ include 'includes/header.php';
         <div class="row">
           <div class="col-5">
             <div class="team-photo">
-              <img src="/assets/img/contact/bosulliv.png" class="img-fluid pop">
+              <img src="/assets/img/contact/bosulliv-small.png" class="img-fluid pop">
             </div>
           </div>
           <div class="col-7">
