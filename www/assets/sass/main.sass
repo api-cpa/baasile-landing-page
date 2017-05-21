@@ -85,7 +85,7 @@ body#homepage
 
 @media (min-width: 48em)
   .mobile-no
-    display: block
+    display: inline-block
   .mobile-yes
     display: none
 
@@ -191,7 +191,7 @@ body#homepage
 /*
  * Affix and center
 
-@media (min-width: 40em)
+@media (min-width: 48em)
   body#homepage
     .site-wrapper-inner
       vertical-align: middle
@@ -349,17 +349,17 @@ body#homepage
 
 .header
   transition: none
+  z-index: 500
 
 #site-container
   .cover-container.header
     background-color: rgba(27, 39, 53, .98)
+    transition: background-color .7s ease-out
 
 
 @media (min-width: 62em)
   #site-container
     .cover-container.header
-      transition: background-color .7s ease-out
-      z-index: 500
       width: 100%
       height: 80px
       position: fixed
@@ -380,8 +380,13 @@ body#homepage
           font-size: 1.75rem
 
 
+@media (max-width: 48em)
+  .b-io-subtitle
+    span
+      display: block
 
-@media (min-width: 40em)
+@media (min-width: 48em)
+
   body#homepage
     height: 100%
 
