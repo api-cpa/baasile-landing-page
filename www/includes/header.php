@@ -44,17 +44,19 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/1677a856f7.css">
   <meta name="msapplication-TileColor" content="#000000">
   <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#000000">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,500">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <?php /*egrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  <script src="https://use.fontawesome.com/1677a856f7.js"></script>
-  <link rel="stylesheet" href="/assets/css/main.min.css">
+  */ ?>
+  <link rel="stylesheet" href="/assets/css/main.css">
+
 
   <?php if (isset($page_styles)) { ?>
     <style>
@@ -63,3 +65,9 @@
   <?php } ?>
 </head>
 <body id="<?php echo $page_id; ?>">
+<div id="site-container" class="pop">
+  <div id="stars">
+    <div id="star1"></div>
+    <div id="star2"></div>
+    <div id="star3"></div>
+  </div>

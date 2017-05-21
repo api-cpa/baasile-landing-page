@@ -1,0 +1,424 @@
+@import "compass"
+
+.b-io-special
+  color: #FF9E00 !important
+
+.b-io-special-inverted
+  color: #FFFFFF !important
+
+
+
+// BOOTSTRAP OVERRIDE
+.btn-primary
+  border-color: #FF9E00 !important
+  background-color: #FF9E00 !important
+
+
+
+.team-photo
+  padding: 0 0px 25px 0
+  max-height: 200px
+
+.row
+  > div
+    margin-top: 2rem
+    margin-bottom: 2rem
+
+  &:first-child
+    margin-top: 1rem
+
+  h3
+    color: #FF9E00 !important
+
+h1
+  text-align: center
+  transition: font-size .2s ease-out
+
+
+// COVER FROM BOOTSTRAP
+html
+  height: 100%
+  min-height: 100%
+
+body
+  height: 100%
+  min-height: 100%
+  font-family: 'Ubuntu', sans-serif
+  background-color: #333
+  color: #FFF
+  //background-image: url('/assets/img/space-background-low.jpg') !important
+  background: fixed radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%) !important
+  -webkit-text-shadow: 0 2px 5px #000
+  text-shadow: 0 2px 5px #000
+
+a
+  -webkit-text-shadow: none
+  text-shadow: none
+
+.site-wrapper
+  text-align: center
+  display: table
+
+  width: 100%
+  //-webkit-box-shadow: inset 0 0 5rem rgba(0, 0, 0, 1), 0 0 5rem rgba(0, 0, 0, 1)
+  //box-shadow: inset 0 0 5rem rgba(0, 0, 0, 1), 0 0 5rem rgba(0, 0, 0, 1)
+
+.site-wrapper-inner
+  display: table-cell
+  vertical-align: top
+
+.cover-container
+  margin-right: auto
+  margin-left: auto
+
+
+body#homepage
+  .cover-container
+    &.header
+      height: auto
+
+.pop
+  animation: popAnim 1s ease-out
+
+body#homepage
+  .site-wrapper
+    height: 100%
+    /* For at least Firefox
+    min-height: 100%
+
+body#discover, body#contact
+  height: auto
+
+/* Padding for spacing
+
+
+.inner
+  padding: 2rem
+
+.container.content
+  margin-top: 20px
+
+
+body#homepage
+  .inner
+    padding: 15px 0 15px 0
+
+
+
+
+.inner.cover
+  padding-top: 0
+
+/*
+ * Header
+
+.masthead
+  text-align: center
+
+.masthead-brand
+  margin-bottom: 0
+
+  a
+    text-decoration: none !important
+    color: inherit !important
+
+
+.nav-masthead
+  display: flex
+  margin-top: 1rem
+  justify-content: center
+
+  .nav-link
+    + .nav-link
+      margin-left: 1rem
+    padding: .25rem 0
+    font-weight: bold
+    color: rgba(255, 255, 255, 0.5)
+    background-color: transparent
+    border-bottom: .25rem solid transparent
+    &:hover, &:focus
+      border-bottom-color: rgba(255, 255, 255, 0.25)
+  .active
+    color: #fff
+    border-bottom-color: #fff
+    &:hover, &:focus
+      border-bottom-color: #fff
+
+
+@media (min-width: 48em)
+
+  body#homepage
+    .inner
+      padding: 2rem
+
+  .team-photo
+    padding-right: 5px
+
+  .container.content
+    margin-top: 60px
+
+  .inner.cover
+    padding-top: 2rem
+
+  .masthead-brand
+    float: left
+  .nav-masthead
+    float: right
+
+  .nav-masthead
+    display: flex
+    margin-top: 0
+
+
+
+
+/*
+ * Footer
+
+
+.mastfoot
+  color: rgba(255, 255, 255, 0.5)
+
+/*
+ * Affix and center
+
+@media (min-width: 40em)
+  body#homepage
+    .site-wrapper-inner
+      vertical-align: middle
+
+    .masthead
+      position: fixed
+      top: 0
+    .mastfoot
+      position: fixed
+      bottom: 0
+
+  /* Handle the widths
+  .masthead, .mastfoot, .cover-container
+    width: 100%
+/* Must be percentage or pixels for horizontal alignment
+
+
+@media (min-width: 62em)
+
+  .container.content
+    margin-top: 150px
+
+  .segment
+    margin-right: auto
+    margin-left: auto
+
+  body#discover
+    .segment
+      .row
+        align-items: center
+
+  .segment
+    width: 42rem
+
+
+
+
+// BACKGROUND
+
+// n is number of stars required
+@function multiple-box-shadow ($n)
+  $value: '#{random(2000)}px #{random(2000)}px rgba(255, 255, 255, #{random(100) / 50})'
+  @for $i from 2 through $n
+    $value: '#{$value} , #{random(2000)}px #{random(2000)}px rgba(255, 255, 255, #{random(100) / 50})'
+
+  @return unquote($value)
+
+@function multiple-box-shadow-blue ($n)
+  $value: '#{random(2000)}px #{random(2000)}px #3366ff'
+  @for $i from 2 through $n
+    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #3366ff'
+
+  @return unquote($value)
+
+$shadows-small:  multiple-box-shadow-blue(700)
+$shadows-medium: multiple-box-shadow(400)
+$shadows-big:    multiple-box-shadow(100)
+
+.b-io-subtitle
+  font-size: 190%
+
+.b-io-homepage-action
+  line-height: 70px
+
+.segment
+  -webkit-perspective: 500px
+  -webkit-perspective-origin: 50% 50%
+  perspective: 500px
+  perspective-origin: 50% 50%
+
+#site-container
+  position: relative
+  overflow: hidden
+  min-height: 100%
+
+  &.disappearing
+    opacity: 0
+    animation: disappearAnim .8s ease-out !important
+
+#stars
+  position: absolute
+
+  div
+    background: transparent
+    border-radius: 3px
+
+#star1
+  width: 1px
+  height: 1px
+  box-shadow: $shadows-small
+  animation: animStarSimple1 3s ease-out
+  transform: translateY(-50px)
+
+  &.disappearing
+    margin-top: -10px
+    height: 10px
+    transform: translateY(-500px)
+    animation: disappearStarAnim .8s ease-in !important
+
+  &:after
+    content: " "
+    position: absolute
+    top: 2000px
+    width: 1px
+    height: 1px
+    box-shadow: $shadows-small
+
+#star2
+  width: 2px
+  height: 2px
+  background: transparent
+  box-shadow: $shadows-medium
+  animation: animStarSimple2 3s ease-out
+  transform: translateY(-65px)
+
+  &.disappearing
+    display: none
+
+  &:after
+    content: " "
+    position: absolute
+    top: 2000px
+    width: 2px
+    height: 2px
+    box-shadow: $shadows-medium
+
+
+#star3
+  width: 3px
+  height: 3px
+  box-shadow: $shadows-big
+  animation: animStarSimple3 3s ease-out
+  transform: translateY(-80px)
+
+  &.disappearing
+    transform: translateY(-500px)
+    animation: disappearStarAnim .8s ease-in !important
+
+  &:after
+    content: " "
+    position: absolute
+    top: 2000px
+    width: 3px
+    height: 3px
+    background: transparent
+    box-shadow: $shadows-big
+
+body#homepage
+  #star1
+    animation: animStar 150s linear infinite
+  #star2
+    animation: animStar 100s linear infinite
+  #star3
+    animation: animStar 50s linear infinite
+
+.header
+  transition: none
+
+#site-container
+  .cover-container.header
+    background-color: rgba(27, 39, 53, .98)
+
+
+@media (min-width: 62em)
+  #site-container
+    .cover-container.header
+      transition: background-color .7s ease-out
+      z-index: 500
+      width: 100%
+      height: 80px
+      position: fixed
+      top: 0
+      left: 0
+
+      .masthead
+        position: fixed
+        width: 100%
+        z-index: 510
+
+      > .inner
+        z-index: 505
+        position: fixed
+        width: 100%
+
+        h1
+          font-size: 1.75rem
+
+
+
+@media (min-width: 40em)
+  body#homepage
+    height: 100%
+
+    #site-container
+      height: 100%
+
+
+@keyframes animStar
+  from
+    transform: translateY(0px)
+  to
+    transform: translateY(-2000px)
+
+
+@keyframes animStarSimple1
+  from
+    transform: translateY(0px)
+  to
+    transform: translateY(-50px)
+
+@keyframes animStarSimple2
+  from
+    transform: translateY(0px)
+  to
+    transform: translateY(-65px)
+
+@keyframes animStarSimple3
+  from
+    transform: translateY(0px)
+  to
+    transform: translateY(-80px)
+
+@keyframes popAnim
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+@keyframes disappearStarAnim
+  from
+    transform: translateY(0px)
+  to
+    transform: translateY(-1000px)
+
+@keyframes disappearAnim
+  from
+    opacity: 1
+  to
+    opacity: 0
